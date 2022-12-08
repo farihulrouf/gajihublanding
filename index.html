@@ -11,6 +11,7 @@
     <meta name="description" content="Simple landind page" />
     <meta name="keywords" content="" />
     <meta name="author" content="" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -74,8 +75,8 @@
         <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
     </nav>
     <!--Hero-->
-    <div class="pt-24 relative">
-        <img class="max-w-4xl absolute right-0" src="assets/images/image_dashboard.png" />
+    <div id="hero" class="pt-24 relative">
+        <img class="max-w-4xl py-24 absolute right-0" src="assets/images/image_dashboard.png" />
         <div class="container pt-36 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -93,12 +94,22 @@
                 </button>
             </div>
             <!--Right Col-->
-            
             <div class="w-full md:w-3/5 py-6 text-center relative">
-                <img class="max-w-md z-50 absolute right-12 -top-72" src="assets/images/Shape@3x.png" />
+                <img class="max-w-md z-50 absolute right-24 -top-72" src="assets/images/Shape@3x.png" />
             </div>
         </div>
     </div>
+    <!--section company use our products-->
+
+    <section class="bg-white border-b py-6 mt-16">
+        <div class="container mx-auto m-8 flex justify-center items-center">
+          <img class="max-w-sm" src="/assets/images/company/slack.png" alt="pic" />
+          <img class="max-w-sm" src="/assets/images/company/netflix.png" alt="pic" />
+          <img class="max-w-sm" src="/assets/images/company/google.png" alt="pic" />
+          <img class="max-w-sm" src="/assets/images/company/airbnb.png" alt="pic" />
+          <img class="max-w-sm" src="/assets/images/company/uber.png" alt="pic" />
+        </div>
+      </section>
 
 </body>
 
