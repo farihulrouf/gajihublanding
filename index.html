@@ -12,6 +12,7 @@
     <meta name="keywords" content="" />
     <meta name="author" content="" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
     <!--Replace with your tailwind.css once created-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Dm Sans', sans-serif;">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
-        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+        <div class="w-full container px-8 mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
             <div class="pl-4 flex items-center">
                 <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
                     href="#">
@@ -76,39 +77,46 @@
     </nav>
     <!--Hero-->
     <div id="hero" class="pt-24 relative">
-        <img class="max-w-4xl py-24 absolute right-0" src="assets/images/image_dashboard.png" />
-        <div class="container pt-36 px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <img class="max-w-4xl py-24 absolute right-0" src="assets/images/dashboard.png" />
+        <div class="container pt-36 px-8 mx-auto flex flex-wrap flex-col md:flex-row items-center">
             <!--Left Col-->
             <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
                 <p class="uppercase tracking-loose w-full">What business are you?</p>
-                <h1 class="my-4 text-5xl font-bold leading-tight">
-                    We help you
-                    grow your business faster
-                </h1>
-                <p class="leading-normal text-xl mb-8">
-                    Ehya is the Instagram analytics platform teams use to stay focused on the goals, track engagement for report your business .
+                <div class="py-6 relative">
+                    <h1 class="text-6xl font-bold leading-tight">
+                        Payroll software <br>
+                        And beyond
+                    </h1>
+                    <img class="absolute left-56 -bottom-1" src="/assets/images/Vector.svg" alt="vector" />
+                </div>
+              
+                <p class="py-4 leading-normal text-xl mb-8">
+                    Make in-house manual payroll a thing of the past. All-in-One Platform
+                    to Run Your Business.
+                    
                 </p>
                 <div class="flex space-x-6 items-center">
                     <button
                         class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        See how it works
+                        Register Now
                     </button>
-                    <a class="flex items-center space-x-2">
-                        Get a free demo
+                    <a class="flex items-center space-x-4">
+                         <span>Get a free demo</span>
+                        <i class='bx bx-arrow-to-right bx-sm bx-fade-left'></i>
                     </a>
                 </div>
 
             </div>
             <!--Right Col-->
             <div class="w-full md:w-3/5 py-6 text-center relative">
-                <img class="max-w-md z-50 absolute right-24 -top-72" src="assets/images/Shape@3x.png" />
+                <img class="max-w-md z-50 absolute right-56 -top-72" src="assets/images/Shape@3x.svg" />
             </div>
         </div>
     </div>
     <!--section company use our products-->
 
     <section class="bg-white py-6 mt-16">
-        <div class="container mx-auto m-8 flex justify-center items-center">
+        <div class="container px-8 mx-auto m-8 flex justify-center items-center">
           <img class="max-w-sm" src="/assets/images/company/slack.png" alt="pic" />
           <img class="max-w-sm" src="/assets/images/company/netflix.png" alt="pic" />
           <img class="max-w-sm" src="/assets/images/company/google.png" alt="pic" />
@@ -119,18 +127,21 @@
 
       <!---section knowladge product-->
       <section class="bg-white py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">  
+        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">  
           <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
-            <img src="/assets/images/apps.png" class="w-full" alt="pic-apps" />
+            <img src="/assets/images/mobileapps.svg" class="w-full" alt="pic-apps" />
             <img src="/assets/images/Vector 1.png" class="w-full absolute" alt="pic-vector" />
           </div>
           <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
-            <div class="p-24 text-black">
-                 <h2 class="text-3xl font-bold max-w-sm">Measure Impressionsand Reach Post</h2>
-                 <p class="py-4">Graphs displaying your performance for metrics like follower evolution, 
-                    average engagement rate per post and reach and impressions to give you the insights.</p>
-
-                 <a href="#">Learn about graphs</a>
+            <div class="p-24">
+                 <h2 class="text-4xl text-blue-900  font-bold max-w-lg">Magically Simplify HR, Payroll for your business.<span class="text-pink-500"> Anywhere </span></h2>
+                 <p class="py-4 text-gray-600">
+                    Rippling lets you easily manage your employees’ payroll, benefits, expenses,<span class="text-pink-500">devices, apps </span> & more—in one place.
+                 </p>
+                 <p class="text-gray-600">
+                    Don't waste time on manual Payroll. Let Automation do it for you. Simplify workflows, and save time
+                 </p>
+                 <a class="py-2 mt-6 text-black w-36 flex space-x-2" href="#"><span>Learn More</span><i class='bx bx-arrow-to-right bx-sm'></i></a>
             </div>
           </div>     
         </div>
@@ -138,15 +149,22 @@
 
 
       <!-- knowlodge product two-->
-      <section class="bg-white py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+      <section class="bg-white lg\:py-8">
+        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
-                <div class="p-24 text-black">
-                     <h2 class="text-3xl font-bold max-w-sm">Schedule Your Post Whenever You Want</h2>
-                     <p class="py-4">Publish your content automatically to ensure that your content reaches the right people.
-                         Built-in features such as.</p>
+                <div>
+                     <h2 class="text-4xl text-blue-900 font-bold max-w-md">How do Gajihub software Payroll help you?</h2>
+                     <p class="py-2 text-gray-500">Don’t waste time on manual Payroll. Let Automation do it for you.<br>
+                        Simplify workflows, and save time..</p>
+                     <ul class="py-6 text-gray-600">
+                        <li class="flex space-x-2 items-center"> <i class='bx bx-check bx-sm'></i><span> Calculate Tax Employee and BPJS</span></li>
+                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Salary, THR, and Other Benefit</span></li>
+                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Dashborad Employee</span></li>
+                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Absensi</span></li>
+                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Key performance Index of Employee</span></li>
+                     </ul>
     
-                     <a href="#">Learn about graphs</a>
+                     <a class="px-4 py-2 mt-4 text-black flex space-x-2" href="#"><span>Learn More</span><i class='bx bx-arrow-to-right bx-sm'></i></a>
                 </div>
               </div>  
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
@@ -157,71 +175,102 @@
 
 
       <!--- how it work -- -->
-      <section class="bg-blue-300 py-8">
-        <div class="container mx-auto flex flex-col pt-4 pb-12">
+      <section class="bg-pink-600 py-8 relative">
+
+        <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl top-0 left-0" alt="alt_pic" />
+        <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl bottom-0 right-0" alt="alt_pic" />
+        <div class="container px-8 mx-auto flex flex-col pt-4 pb-12">
             <div class="py-4 text-center w-full">
-                <h1 class="py-4 text-black text-3xl">How do Gajihub software help you?</h1>
-                <p class="py-4 text-black">Don’t waste time on search manual tasks. Let Automation do it for you.<br> 
-                    Simplify workflows, reduce errors, and save time.
+                <h2 class="text-white py-4 text-4xl">
+                    Your Business. Anywhere.</h2>
+                <p class="py-4 text-gray-300">
+                    Whether on the go or working remotely, your business is with you.<br>
+                    Gajihub award winning mobile app keeps you connected to your <br> business at all time
                 </p>
+                <h4 class="text-gray-100 text-2xl">
+                    All the features and reports you love, available on the go,<br> all the time.
+                </h4>
             </div>
             <div class="py-4 flex flex-wrap gap-2 justify-center items-center">
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-center text-2xl font-medium mb-2">
-                            Penghitungan pajak karyawan dan BPJS
-                        </h4>      
-                    </div>
+              
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
 
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-2xl font-medium mb-2">
-                            Employee and BPJS tax Calculation
-                        </h4>      
-                    </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
 
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-2xl font-medium mb-2">
-                            Employee and BPJS tax Calculation
-                        </h4>      
-                    </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
 
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-2xl font-medium mb-2">
-                            Employee and BPJS tax Calculation
-                        </h4>      
-                    </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
 
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-2xl font-medium mb-2">
-                            Employee and BPJS tax Calculation
-                        </h4>      
-                    </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
-
-                <div class="rounded-sm shadow-sm bg-white max-w-sm">
-                    <div class="p-4">
-                        <h4 class="text-gray-900 text-2xl font-medium mb-2">
-                            Employee and BPJS tax Calculation
-                        </h4>      
-                    </div>
+                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
+                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+                        See our guideline
+                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
+                    </a>
                 </div>
-                     
-                
+ 
             </div>
         </div>
       </section>
 
       <!---how to product work and benefit for you-->
       <section class="bg-white py-8">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
                 <div class="p-8">
                     <h2 class="text-black text-4xl max-w-sm">Powering the growth of 100+ business & retailers in Indonesia.</h2>
@@ -235,7 +284,7 @@
       </section>
 
       <section class="bg-white py-8 pb-24">
-        <div class="container mx-auto flex flex-wrap pt-4 pb-8 gradient relative">
+        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-8 gradient relative">
             <img src="/assets/images/Group 42.png" class="max-w-sm absolute right-0 top-0" alt="pic" />
             <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
                 <div class="p-8">
