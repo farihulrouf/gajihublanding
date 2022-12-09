@@ -2,424 +2,590 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>
-        Gajihub
-    </title>
-    <meta name="description" content="Simple landind page" />
-    <meta name="keywords" content="" />
-    <meta name="author" content="" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
-    <!--Replace with your tailwind.css once created-->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
-    <style>
-        .gradient {
-            background: linear-gradient(90deg, #09BDDD 0%, #00B8D9 100%);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>
+    Gajihub
+  </title>
+  <meta name="description" content="Simple landind page" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!--Replace with your tailwind.css once created-->
+
+  <!-- Define your gradient here - use online tools to find a gradient matching your branding-->
+  <style>
+    .gradient {
+      background: linear-gradient(90deg, #09BDDD 0%, #00B8D9 100%);
+    }
+  </style>
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Dm Sans', sans-serif;">
-    <!--Nav-->
-    <nav id="header" class="fixed w-full z-30 top-0 text-white">
-        <div class="w-full container px-8 mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-            <div class="pl-4 flex items-center">
-                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
-                    href="#">
+  <!--Nav-->
+  <nav id="header" class="fixed w-full z-30 top-0 text-white">
+    <div class="w-full container px-8 mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div class="pl-4 flex items-center">
+        <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
 
-                    <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 512.005 512.005">
-                        <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
-                            transform="matrix(1,0,0,1,0,0)" />
-                        <path class="plane-take-off"
-                            d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
-                    </svg>
-                    Gajihub
-                </a>
+          <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+            <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
+              transform="matrix(1,0,0,1,0,0)" />
+            <path class="plane-take-off"
+              d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
+          </svg>
+          Gajihub
+        </a>
 
-            </div>
-            <div class="block lg:hidden pr-4">
-                <button id="nav-toggle"
-                    class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
-                id="nav-content">
-                <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                    <li class="mr-3">
-                        <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                            href="#">link</a>
-                    </li>
-                    <li class="mr-3">
-                        <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
-                            href="#">link</a>
-                    </li>
-                </ul>
-                <button id="navAction"
-                    class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                    Action
-                </button>
-            </div>
-        </div>
-        <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
-    </nav>
-    <!--Hero-->
-    <div id="hero" class="pt-24 relative">
-        <img class="max-w-4xl py-24 absolute right-0" src="assets/images/dashboard.png" />
-        <div class="container pt-36 px-8 mx-auto flex flex-wrap flex-col md:flex-row items-center">
-            <!--Left Col-->
-            <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                <p class="uppercase tracking-loose w-full">What business are you?</p>
-                <div class="py-6 relative">
-                    <h1 class="text-6xl font-bold leading-tight">
-                        Payroll software <br>
-                        And beyond
-                    </h1>
-                    <img class="absolute left-56 -bottom-1" src="/assets/images/Vector.svg" alt="vector" />
-                </div>
-              
-                <p class="py-4 leading-normal text-xl mb-8">
-                    Make in-house manual payroll a thing of the past. All-in-One Platform
-                    to Run Your Business.
-                    
-                </p>
-                <div class="flex space-x-6 items-center">
-                    <button
-                        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-                        Register Now
-                    </button>
-                    <a class="flex items-center space-x-4">
-                         <span>Get a free demo</span>
-                        <i class='bx bx-arrow-to-right bx-sm bx-fade-left'></i>
-                    </a>
-                </div>
-
-            </div>
-            <!--Right Col-->
-            <div class="w-full md:w-3/5 py-6 text-center relative">
-                <img class="max-w-md z-50 absolute right-56 -top-72" src="assets/images/Shape@3x.svg" />
-            </div>
-        </div>
+      </div>
+      <div class="block lg:hidden pr-4">
+        <button id="nav-toggle"
+          class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+        id="nav-content">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+          <li class="mr-3">
+            <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="#">link</a>
+          </li>
+          <li class="mr-3">
+            <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+              href="#">link</a>
+          </li>
+        </ul>
+        <button id="navAction"
+          class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          Action
+        </button>
+      </div>
     </div>
-    <!--section company use our products-->
-
-    <section class="bg-white py-6 mt-16">
-        <div class="container px-8 mx-auto m-8 flex justify-center items-center">
-          <img class="max-w-sm" src="/assets/images/company/slack.png" alt="pic" />
-          <img class="max-w-sm" src="/assets/images/company/netflix.png" alt="pic" />
-          <img class="max-w-sm" src="/assets/images/company/google.png" alt="pic" />
-          <img class="max-w-sm" src="/assets/images/company/airbnb.png" alt="pic" />
-          <img class="max-w-sm" src="/assets/images/company/uber.png" alt="pic" />
+    <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+  </nav>
+  <!--Hero-->
+  <div id="hero" class="pt-24 relative">
+    <img class="max-w-4xl py-24 absolute right-0" src="assets/images/dashboard.png" />
+    <div class="container pt-36 px-8 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+      <!--Left Col-->
+      <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
+        <p class="uppercase tracking-loose w-full">What business are you?</p>
+        <div class="py-6 relative">
+          <h1 class="text-6xl font-bold leading-tight">
+            Payroll software <br>
+            And beyond
+          </h1>
+          <img class="absolute left-56 -bottom-1" src="/assets/images/Vector.svg" alt="vector" />
         </div>
-      </section>
 
-      <!---section knowladge product-->
-      <section class="bg-white py-8">
-        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">  
-          <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
-            <img src="/assets/images/mobileapps.svg" class="w-full" alt="pic-apps" />
-            <img src="/assets/images/Vector 1.png" class="w-full absolute" alt="pic-vector" />
-          </div>
-          <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
-            <div class="p-24">
-                 <h2 class="text-4xl text-blue-900  font-bold max-w-lg">Magically Simplify HR, Payroll for your business.<span class="text-pink-500"> Anywhere </span></h2>
-                 <p class="py-4 text-gray-600">
-                    Rippling lets you easily manage your employees’ payroll, benefits, expenses,<span class="text-pink-500">devices, apps </span> & more—in one place.
-                 </p>
-                 <p class="text-gray-600">
-                    Don't waste time on manual Payroll. Let Automation do it for you. Simplify workflows, and save time
-                 </p>
-                 <a class="py-2 mt-6 text-black w-36 flex space-x-2" href="#"><span>Learn More</span><i class='bx bx-arrow-to-right bx-sm'></i></a>
-            </div>
-          </div>     
+        <p class="py-4 leading-normal text-xl mb-8">
+          Make in-house manual payroll a thing of the past. All-in-One Platform
+          to Run Your Business.
+
+        </p>
+        <div class="flex space-x-6 items-center">
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+            Register Now
+          </button>
+          <a class="flex items-center space-x-4">
+            <span>Get a free demo</span>
+            <i class='bx bx-arrow-to-right bx-sm bx-fade-left'></i>
+          </a>
         </div>
-      </section>
+
+      </div>
+      <!--Right Col-->
+      <div class="w-full md:w-3/5 py-6 text-center relative">
+        <img class="max-w-md z-50 absolute right-56 -top-72" src="assets/images/Shape@3x.svg" />
+      </div>
+    </div>
+  </div>
+  <!--section company use our products-->
+
+  <section class="bg-white py-6 mt-16">
+    <div class="container px-8 mx-auto m-8 flex justify-center items-center">
+      <img class="max-w-sm" src="/assets/images/company/slack.png" alt="pic" />
+      <img class="max-w-sm" src="/assets/images/company/netflix.png" alt="pic" />
+      <img class="max-w-sm" src="/assets/images/company/google.png" alt="pic" />
+      <img class="max-w-sm" src="/assets/images/company/airbnb.png" alt="pic" />
+      <img class="max-w-sm" src="/assets/images/company/uber.png" alt="pic" />
+    </div>
+  </section>
+
+  <!---section knowladge product-->
+  <section class="bg-white py-8">
+    <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
+        <img src="/assets/images/mobileapps.svg" class="w-full" alt="pic-apps" />
+        <img src="/assets/images/Vector 1.png" class="w-full absolute" alt="pic-vector" />
+      </div>
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
+        <div class="p-24">
+          <h2 class="text-4xl text-blue-900  font-bold max-w-lg">Magically Simplify HR, Payroll for your business.<span
+              class="text-pink-500"> Anywhere </span></h2>
+          <p class="py-4 text-gray-600">
+            Rippling lets you easily manage your employees’ payroll, benefits, expenses,<span
+              class="text-pink-500">devices, apps </span> & more—in one place.
+          </p>
+          <p class="text-gray-600">
+            Don't waste time on manual Payroll. Let Automation do it for you. Simplify workflows, and save time
+          </p>
+          <a class="py-2 mt-6 text-black w-36 flex space-x-2" href="#"><span>Learn More</span><i
+              class='bx bx-arrow-to-right bx-sm'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-      <!-- knowlodge product two-->
-      <section class="bg-white lg\:py-8">
-        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
-            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
+  <!-- knowlodge product two-->
+  <section class="bg-white lg\:py-8">
+    <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
+        <div>
+          <h2 class="text-4xl text-blue-900 font-bold max-w-md">How do Gajihub software Payroll help you?</h2>
+          <p class="py-2 text-gray-500">Don’t waste time on manual Payroll. Let Automation do it for you.<br>
+            Simplify workflows, and save time..</p>
+          <ul class="py-6 text-gray-600">
+            <li class="flex space-x-2 items-center"> <i class='bx bx-check bx-sm'></i><span> Calculate Tax Employee and
+                BPJS</span></li>
+            <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Salary, THR, and Other
+                Benefit</span></li>
+            <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Dashborad Employee</span>
+            </li>
+            <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Absensi</span></li>
+            <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Key performance Index of
+                Employee</span></li>
+          </ul>
+
+          <a class="px-4 py-2 mt-4 text-black flex space-x-2" href="#"><span>Learn More</span><i
+              class='bx bx-arrow-to-right bx-sm'></i></a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
+        <img src="/assets/images/Device - Macbook Pro.svg" class="w-full" alt="pic-apps" />
+      </div>
+    </div>
+  </section>
+
+
+  <!--- how it work -- -->
+  <section class="bg-pink-600 py-8 relative">
+
+    <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl top-0 left-0" alt="alt_pic" />
+    <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl bottom-0 right-0" alt="alt_pic" />
+    <div class="container px-8 mx-auto flex flex-col pt-4 pb-12">
+      <div class="py-4 text-center w-full">
+        <h2 class="text-white py-4 text-4xl">
+          Your Business. Anywhere.</h2>
+        <p class="py-4 text-gray-300">
+          Whether on the go or working remotely, your business is with you.<br>
+          Gajihub award winning mobile app keeps you connected to your <br> business at all time
+        </p>
+        <h4 class="text-gray-100 text-2xl">
+          All the features and reports you love, available on the go,<br> all the time.
+        </h4>
+      </div>
+      <div class="py-4 flex flex-wrap gap-2 justify-center items-center">
+
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+        <div
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor"
+            viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z"
+              clip-rule="evenodd"></path>
+            <path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path>
+          </svg>
+          <a href="#">
+            <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?
+            </h5>
+          </a>
+          <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how
+            to certify for your weekly benefits:</p>
+          <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
+            See our guideline
+            <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+              </path>
+              <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--- section testimoni -->
+  <section class="bg-white py-8">
+    <div class="py-8 text-center w-full">
+      <h2 class="text-black py-8 text-4xl">
+        What they say about us ?.</h2>
+    </div>
+    <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
+        <div class="p-8">
+          <h2 class="text-black text-3xl max-w-xl">Powering the growth of 100+ business & retailers in Indonesia.</h2>
+          <p class="text-blue-900 py-4">From single store, startups, to large multi-store brands.</p>
+          <a href="#" class="flex text-pink-700 text-2xl items-center space-x-4">
+            <span>Get in touch now</span>
+           <i class='bx bx-arrow-to-right bx-sm'></i>
+        </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
+        <div id="testim" class="testim">
+          <div class="testim-cover">
+            <div class="wrap">
+
+              <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+              <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+
+              <i id="left-arrow" class='bx bx-arrow-to-left bx-sm'></i>
+              <ul id="testim-dots" class="dots">
+                <li class="dot active"></li>
+                <!--
+                           -->
+                <li class="dot"></li>
+                <!--
+                           -->
+                <li class="dot"></li>
+              </ul>
+              <div id="testim-content" class="cont text-black">
+
+                <div class="active">
+                  <div class="img"><img src="/assets/images/testimoni/testi2.png" alt=""></div>
+                  <h2>Ana, owner Batiklurik.id</h2>
+                  <p>Managing payroll at the end of the month can be very tiring. But since using GajiHub, you only need
+                    to click, just click, it's done.</p>
+                </div>
+
                 <div>
-                     <h2 class="text-4xl text-blue-900 font-bold max-w-md">How do Gajihub software Payroll help you?</h2>
-                     <p class="py-2 text-gray-500">Don’t waste time on manual Payroll. Let Automation do it for you.<br>
-                        Simplify workflows, and save time..</p>
-                     <ul class="py-6 text-gray-600">
-                        <li class="flex space-x-2 items-center"> <i class='bx bx-check bx-sm'></i><span> Calculate Tax Employee and BPJS</span></li>
-                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Salary, THR, and Other Benefit</span></li>
-                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Dashborad Employee</span></li>
-                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Absensi</span></li>
-                        <li class="flex space-x-2 items-center"><i class='bx bx-check bx-sm'></i><span> Key performance Index of Employee</span></li>
-                     </ul>
-    
-                     <a class="px-4 py-2 mt-4 text-black flex space-x-2" href="#"><span>Learn More</span><i class='bx bx-arrow-to-right bx-sm'></i></a>
-                </div>
-              </div>  
-            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
-              <img src="/assets/images/Device - Macbook Pro.svg" class="w-full" alt="pic-apps" />
-            </div>  
-        </div>
-      </section>
 
-
-      <!--- how it work -- -->
-      <section class="bg-pink-600 py-8 relative">
-
-        <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl top-0 left-0" alt="alt_pic" />
-        <img src="/assets/images/Shape@3x.svg" class="absolute max-w-xl bottom-0 right-0" alt="alt_pic" />
-        <div class="container px-8 mx-auto flex flex-col pt-4 pb-12">
-            <div class="py-4 text-center w-full">
-                <h2 class="text-white py-4 text-4xl">
-                    Your Business. Anywhere.</h2>
-                <p class="py-4 text-gray-300">
-                    Whether on the go or working remotely, your business is with you.<br>
-                    Gajihub award winning mobile app keeps you connected to your <br> business at all time
-                </p>
-                <h4 class="text-gray-100 text-2xl">
-                    All the features and reports you love, available on the go,<br> all the time.
-                </h4>
-            </div>
-            <div class="py-4 flex flex-wrap gap-2 justify-center items-center">
-              
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
+                  <div class="img"><img src="/assets/images/testimoni/testi3.png" alt=""></div>
+                  <h2>Adi, Founder Nifly Jewelery</h2>
+                  <p>Employees like to use GajiHub, because they want reimbursement or overtime claims so it's no longer
+                    a hassle.</p>
                 </div>
 
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
+                <div>
+
+                  <div class="img"><img src="/assets/images/testimoni/testi2.png" alt=""></div>
+                  <h2>Fery Wistanto, Co-Founder Kerjoo.com</h2>
+                  <p>Taking care of employee taxes and BPJS is really confusing. But with GajiHub, we know it's all
+                    right, everything has been calculated by GajiHub.</p>
                 </div>
 
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
-                </div>
 
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
-                </div>
 
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
-                </div>
-                <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-                    <svg class="w-10 h-10 mb-2 text-gray-500 dark:text-gray-400" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 5a3 3 0 015-2.236A3 3 0 0114.83 6H16a2 2 0 110 4h-5V9a1 1 0 10-2 0v1H4a2 2 0 110-4h1.17C5.06 5.687 5 5.35 5 5zm4 1V5a1 1 0 10-1 1h1zm3 0a1 1 0 10-1-1v1h1z" clip-rule="evenodd"></path><path d="M9 11H3v5a2 2 0 002 2h4v-7zM11 18h4a2 2 0 002-2v-5h-6v7z"></path></svg>
-                    <a href="#">
-                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-                    </a>
-                    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-                    <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                        See our guideline
-                        <svg class="w-5 h-5 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path><path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path></svg>
-                    </a>
-                </div>
- 
-            </div>
-        </div>
-      </section>
-
-      <!---how to product work and benefit for you-->
-      <section class="bg-white py-8">
-        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-12">
-            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
-                <div class="p-8">
-                    <h2 class="text-black text-4xl max-w-sm">Powering the growth of 100+ business & retailers in Indonesia.</h2>
-                    <p class="text-black py-4">From single store, startups, to large multi-store brands.</p>
-                </div>
-             </div>  
-            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink relative">
-
-            </div>  
-        </div>
-      </section>
-
-      <section class="bg-white py-8 pb-24">
-        <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-8 gradient relative">
-            <img src="/assets/images/Group 42.png" class="max-w-sm absolute right-0 top-0" alt="pic" />
-            <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
-                <div class="p-8">
-                    <h2 class="text-white text-4xl max-w-md">Grow your brand 
-                        presence on social  media.</h2>
-                    <p class="text-white py-4">Join with more 1200+ happy customers.</p>
-                </div>
-                <div class="pl-8 flex items-center gap-4">
-                    <div class="flex">
-                        <img src="/assets/images/testimoni/testi1.png" alt="testi" />
-                        <img src="/assets/images/testimoni/testi2.png" alt="testi" />
-                        <img src="/assets/images/testimoni/testi3.png" alt="testi" />
-                        <img src="/assets/images/testimoni/testi4.png" alt="testi" />
-                        <img src="/assets/images/testimoni/testi5.png" alt="testi" />
-                    </div>
-                    <a class="text-white" href="#">and other</a>
-                </div>
-             </div>  
-            <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
-                <div class="p-4">
-                    <a href="#" class="px-8 py-4 bg-white text-black text-2xl">
-                        Get Your Trial Now
-                    </a>
-                </div>
-            </div>  
-        </div>
-      </section>
-
-      <footer class="bg-black relative">
-        <img src="/assets/images/Group 42.png" class="max-w-md absolute right-0 bottom-0" alt="pic" />
-        <img src="/assets/images/Group 42.png" class="max-w-sm absolute left-0 bottom-0" alt="pic" />
-        <div class="container mx-auto px-8 pt-8">
-          <div class="w-full flex justify-around flex-col md:flex-row py-6">
-            <div class="max-w-lg mb-6 text-black">
-              <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-               
-                <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-                  <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" />
-                  <path
-                    class="plane-take-off"
-                    d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "
-                  />
-                </svg>
-                Gajihub
-              </a>
-              <div class="py-4 text-white">
-                <p class="text-sm">+62 81 222 8000 70</p>
-                <p class="text-sm">hello@gajihub.com</p>
-                <p class="max-w-sm">PT Kledo Berhati Nyaman <br>
-                    Jl. Kledokan No B10, Catur Tunggal, Depok, DIY, 55281</p>
               </div>
-              <div class="py-2 text-white flex space-x-2">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z"></path><circle cx="11.994" cy="11.979" r="3.003"></circle></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
-             </div>
-             <div class="py-4 flex space-x-1">
-                <img src="/assets/images/available-on-google-play.svg" class="w-36" alt="playsoire" />
-                <img src="/assets/images/available-on-app-store.svg" class="w-36" alt="appsote" />
-             </div>
-             <div class="py-4 flex space-x-2">
-                <img src="/assets/images/output-onlinepngtools.png" class="w-36 h-36" alt="kominfo" />
-                <img src="/assets/images/kominfo-pse.png" class="w-36 h-36" alt="outline" />
-             </div>
             </div>
-            <div class="max-w-sm">
-              <p class="uppercase text-white md:mb-6">About Us</p>
-              <ul class="list-reset mb-6">
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">About</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Tutorial</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Blog</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Carrier</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Security</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Create Demo</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Login</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Proposal Download</a>
-                  </li>
-              </ul>
-            </div>
-            <div class="max-w-sm">
-              <p class="uppercase text-white md:mb-6">Service</p>
-              <ul class="list-reset mb-6">
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Penggahian & THR</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Kelola PPh 21</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Akuntansi</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Analisa Datta</a>
-                  </li>
-                  <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                    <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Kelola Cuti & Izin</a>
-                  </li>
-              </ul>
-            </div>
-            <div class="max-w-sm">
-              <p class="uppercase text-white md:mb-6">Tool Bisnis</p>
-              <ul class="list-reset mb-6">
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Facebook</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Linkedin</a>
-                </li>
-                <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                  <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Twitter</a>
-                </li>
-              </ul>
-            </div>
-           
           </div>
-        </div> 
-     </footer>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section class="bg-white py-8 pb-24">
+    <div class="container px-8 mx-auto flex flex-wrap pt-4 pb-8 gradient relative">
+      <img src="/assets/images/Group 42.png" class="max-w-sm absolute right-0 top-0" alt="pic" />
+      <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink flex tems-center justify-center">
+        <div class="p-8">
+          <h2 class="text-white text-4xl max-w-xl">Grow your Business,
+            Don’t waste time on manual Payroll.</h2>
+          <p class="text-white py-4">Join with more 1200+ happy customers.</p>
+        </div>
+        <div class="pl-8 flex items-center gap-4">
+          <div class="flex -space-x-2">
+            <img class="w-12" src="/assets/images/testimoni/testi1.png" alt="testi" />
+            <img class="w-12" src="/assets/images/testimoni/testi2.png" alt="testi" />
+            <img class="w-12" src="/assets/images/testimoni/testi3.png" alt="testi" />
+            <img class="w-12" src="/assets/images/testimoni/testi4.png" alt="testi" />
+            <img class="w-12" src="/assets/images/testimoni/testi5.png" alt="testi" />
+          </div>
+          <a class="text-white" href="#">and other</a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 p-6 flex justify-center items-center">
+        <div class="p-4">
+          <a href="#" class="px-8 py-4 bg-pink-500 rounded-md text-white text-2xl">
+            Get Your Trial Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-black relative">
+    <img src="/assets/images/Group 42.png" class="max-w-md absolute right-0 bottom-0" alt="pic" />
+    <img src="/assets/images/Group 42.png" class="max-w-sm absolute left-0 bottom-0" alt="pic" />
+    <div class="container mx-auto px-8 pt-8">
+      <div class="w-full flex justify-around flex-col md:flex-row py-6">
+        <div class="max-w-lg mb-6 text-black">
+          <a class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
+
+            <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
+              <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502"
+                transform="matrix(1,0,0,1,0,0)" />
+              <path class="plane-take-off"
+                d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z " />
+            </svg>
+            Gajihub
+          </a>
+          <div class="py-4 text-white">
+            <p class="text-sm">+62 81 222 8000 70</p>
+            <p class="text-sm">hello@gajihub.com</p>
+            <p class="max-w-sm">PT Kledo Berhati Nyaman <br>
+              Jl. Kledokan No B10, Catur Tunggal, Depok, DIY, 55281</p>
+          </div>
+          <div class="py-2 text-white flex space-x-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+              <path
+                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+              <path
+                d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
+              </path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+              <path
+                d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.709-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.185.42 4.607 4.607 0 0 0-2.633 2.633 6.554 6.554 0 0 0-.419 2.185c-.043.963-.056 1.268-.056 3.71s0 2.754.056 3.71c.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.043 1.268.056 3.71.056s2.755 0 3.71-.056a6.59 6.59 0 0 0 2.186-.419 4.615 4.615 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.187.043-.962.056-1.267.056-3.71-.002-2.442-.002-2.752-.058-3.709zm-8.953 8.297c-2.554 0-4.623-2.069-4.623-4.623s2.069-4.623 4.623-4.623a4.623 4.623 0 0 1 0 9.246zm4.807-8.339a1.077 1.077 0 0 1-1.078-1.078 1.077 1.077 0 1 1 2.155 0c0 .596-.482 1.078-1.077 1.078z">
+              </path>
+              <circle cx="11.994" cy="11.979" r="3.003"></circle>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;">
+              <path
+                d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z">
+              </path>
+            </svg>
+          </div>
+          <div class="py-4 flex space-x-1">
+            <img src="/assets/images/available-on-google-play.svg" class="w-36" alt="playsoire" />
+            <img src="/assets/images/available-on-app-store.svg" class="w-36" alt="appsote" />
+          </div>
+          <div class="py-4 flex space-x-2">
+            <img src="/assets/images/output-onlinepngtools.png" class="w-36 h-36" alt="kominfo" />
+            <img src="/assets/images/kominfo-pse.png" class="w-36 h-36" alt="outline" />
+          </div>
+        </div>
+        <div class="max-w-sm">
+          <p class="uppercase text-white md:mb-6">About Us</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">About</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Tutorial</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Blog</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Carrier</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Security</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Create Demo</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Login</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Proposal Download</a>
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-sm">
+          <p class="uppercase text-white md:mb-6">Service</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Penggahian & THR</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Kelola PPh 21</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Akuntansi</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Analisa Datta</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Kelola Cuti & Izin</a>
+            </li>
+          </ul>
+        </div>
+        <div class="max-w-sm">
+          <p class="uppercase text-white md:mb-6">Tool Bisnis</p>
+          <ul class="list-reset mb-6">
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Facebook</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Linkedin</a>
+            </li>
+            <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+              <a href="#" class="no-underline hover:underline text-gray-300 hover:text-pink-500">Twitter</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/js/testimoni.js"></script>
 </body>
 
 </html>
